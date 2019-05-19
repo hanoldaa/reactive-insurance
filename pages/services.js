@@ -57,9 +57,8 @@ export default function About() {
                 background: 
                     linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
                     url('../static/services-stock1.jpeg');
-                background-attachment: fixed;
                 background-size: cover;
-                background-position: 0 -20px;
+                background-position: center center;
             }
             .banner-quote p {
                 color: white;
@@ -77,6 +76,9 @@ export default function About() {
                 .content .main {
                     order: 2; 
                     flex: 2 0px;
+                }
+                .banner-quote {
+                    background-attachment: fixed;
                 }
             }
             `}</style>        
