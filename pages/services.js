@@ -4,7 +4,7 @@ export default function About() {
     return (
         <Layout>
             <div className="banner-quote">
-                <p>React Health Solutions has assembled a team of the world's top health professions who are dedicated to your well being.</p>
+                <p>React Health Solutions has assembled a team of the world's top health professionals who are dedicated to your well being.</p>
             </div>
             <div className="content">
                 <div className="app-info">
