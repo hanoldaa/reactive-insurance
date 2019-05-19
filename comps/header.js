@@ -6,6 +6,12 @@ const linkStyle = {
 const Header = () => {
     return(
         <header className="header-container">
+            <div className="header-button" id="login">
+                <a className="login">Log In</a>
+            </div>
+            <div className="header-button" id="register">
+                <a className="register">Register</a>
+            </div>
             <div className="logo">
                 <img src="../static/logo2.png"></img>
             </div>
@@ -29,32 +35,33 @@ const Header = () => {
                     {active => <a className={active ? 'active' : ''}>Health Resources</a>}
                 </LinkActive>
             </div>
-            <div className="header-button">
-                <a className="login">Log In</a>
-            </div>
-            <div className="header-button">
-                <a className="register">Register</a>
-            </div>
             <style jsx>{`
                 .header-container {
                     display: flex;
-                    flex-direction: row;
+                    flex-flow: row  wrap;
                     font-family: Ubuntu;
+                    justify-content: center;
+                    margin-top: 1em;
                     margin-bottom: 1em;
                     padding: 0 0 0 1em;
+                }
+                .header-container .logo {
+                    margin: 0 1em 0 1em;
+                    flex: 1 100%;
                 }
                 .header-container .header-button {
                     align-self: center;
                     flex: 0 1;
                     margin: .5em 0.8em 0 0;
                 }
-                .header-container > * {
-                    flex: 1 auto;
+                .header-container .header-button#login {
+                    flex: 1 2 auto;
+                    text-align: right;
+                    width: 30%;
                 }
                 .logo img {
                     display: block;
                     object-fit: contain;
-                    max-width: 300px;
                     width: 100%;
                     height: 100%;
                 }
@@ -105,14 +112,26 @@ const Header = () => {
 
                 @media screen and (min-width : 720px) {
                     .header-container {
-                        flex-direction: row;
                         margin-bottom: -1.8em;
+                        flex-flow: row nowrap;
+                    }
+                    .header-container .logo {
+                        flex: 1 auto;
+                    }
+                    .header-container .logo img{
+                        max-width: 300px;
                     }
                     .header-container .header-button {
                         flex: 0 1;
                         align-self: center;
                         margin: .5em 0.8em 0 0;
                     }
+                    .header-button#login {
+                        order: 2;
+                    }            
+                    .header-button#register {
+                        order: 3;
+                    }                    
                 }
             `}</style>
         </header>

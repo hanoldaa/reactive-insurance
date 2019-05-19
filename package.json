@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.0",
+    "jQuery": "^1.7.4",
     "next": "^8.1.0",
     "next-link-active": "^1.0.1",
     "now": "^15.2.0",

@@ -105,7 +105,7 @@ export default function About() {
                     url('../static/about-stock1.jpg');
                 background-attachment: fixed;
                 background-size: cover;
-                background-position: 0 -20px;
+                background-position: 0 10px;
             }
             .banner-quote p {
                 color: white;
