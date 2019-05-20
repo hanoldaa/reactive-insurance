@@ -41,9 +41,7 @@ const Header = () => {
                     flex-flow: row  wrap;
                     font-family: Ubuntu;
                     justify-content: center;
-                    margin-top: 1em;
-                    margin-bottom: 1em;
-                    padding: 0 0 0 1em;
+                    padding: 1em 0 1em 1em;
                 }
                 .header-container .logo {
                     margin: 0 1em 0 1em;
@@ -112,8 +110,8 @@ const Header = () => {
 
                 @media screen and (min-width : 720px) {
                     .header-container {
-                        margin-bottom: -1.8em;
                         flex-flow: row nowrap;
+                        margin-bottom: 0;
                     }
                     .header-container .logo {
                         flex: 1 auto;
