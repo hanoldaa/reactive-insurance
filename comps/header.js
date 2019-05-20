@@ -126,8 +126,10 @@ const Header = () => {
                         align-self: center;
                         margin: .5em 0.8em 0 0;
                     }
-                    .header-button#login {
+                    .header-container .header-button#login {
                         order: 2;
+                        flex: 0 1;
+                        width: auto;
                     }            
                     .header-button#register {
                         order: 3;
