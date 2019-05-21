@@ -59,6 +59,7 @@ const Header = () => {
                     font-size: .8em;
                 }
                 .header-container {
+                    background-color: white;
                     display: flex;
                     flex-flow: row  wrap;
                     font-family: Ubuntu;

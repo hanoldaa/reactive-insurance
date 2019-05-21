@@ -1,5 +1,7 @@
 import Layout from '../comps/mylayout'
 import BannerQuote from '../comps/bannerquote'
+import SideBar from '../comps/sidebar'
+import SideBlurb from '../comps/sideblurb'
 
 const Index = (props) => (
     <Layout>
@@ -10,9 +12,8 @@ const Index = (props) => (
                     Your health is important. That’s why we offer the React Health plan to provide you and your family with the health coverage and benefits you need so you have peace of mind and can follow your calling.
                 </p>
             </div>
-            <div className="announcements">
-                <p className="announcement-header">ANNOUNCEMENTS</p>
-                <div className="blurb">
+            <SideBar header="ANNOUNCEMENTS">
+                <SideBlurb>
                     <p>React Health Solutions is passionate about keeping members healthy.</p>
                     <ul>
                         <li>We believe in the wisdom of early care.</li>
@@ -20,17 +21,10 @@ const Index = (props) => (
                         <li>We offer unique tools to keep members from becoming ill and, when they get sick, return them to health quickly.</li>
                     </ul>
                     <p>Members make their own medical decisions. But React Health Solutions ensures that the member's choice is always an informed one.</p>
-                </div>
-            </div>
+                </SideBlurb>
+            </SideBar>
         </div>
         <style jsx>{`
-            .content {
-                display: flex;
-                flex-flow: row wrap;   
-            }
-            .content > * {
-                flex: 1 100%;
-            }
             .main {
                 background-color: white;
                 border-radius: 6px;
@@ -41,35 +35,6 @@ const Index = (props) => (
                 font-family: 'Open Sans';
                 margin: 1em;
                 padding: 2em;
-            }
-            .announcement-header {
-                color: #05A5D1;
-                font-family: Ubuntu;
-                font-size: .9em;
-                font-weight: bold;
-                letter-spacing: .3em;
-                text-align: center;
-            }
-            .blurb {
-                border-radius: 5px;
-                background-color: #05a5d1;
-                box-shadow: 2px 3px 10px #036a86;
-                color: white;
-                font-family: 'Open Sans';
-                font-size: .8em;
-                margin: .5em 1em;
-                padding: 1em;
-            }
-
-            @media all and (min-width: 680px) {
-                .content .announcements { 
-                    flex: 1 0px; 
-                    order: 1; 
-                }
-                .content .main {
-                    order: 2; 
-                    flex: 2 0px;
-                }
             }
         `}</style>
     </Layout>

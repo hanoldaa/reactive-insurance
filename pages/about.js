@@ -1,33 +1,34 @@
 import Layout from '../comps/mylayout'
-import BannerQuote from '../comps/bannerquote';
+import BannerQuote from '../comps/bannerquote'
+import SideBar from '../comps/sidebar'
 
 export default function About() {
     return (
         <Layout>
             <BannerQuote src={'../static/about-stock1.jpg'} quote={`React Health Solutions has assembled a team of the world's top health professionals who are dedicated to your well being.`} />
             <div className="content">
-                <div className="board">
+                <SideBar className="board">
                     <div className="board-header">
                         <p className="board-header-text">BOARD</p>
                         <p className="board-header-text">OF</p>
                         <p className="board-header-text">DIRECTORS</p>
                     </div>
                     <div>
-                        <img src='../static/about-face2.jpg'></img>
+                        <img className="portrait" src='../static/about-face2.jpg'></img>
                         <p className="board-name">Owen Kennedy</p>
                         <p className="board-position">Chairman</p>
                     </div>
                     <div>
-                        <img src='../static/about-face1.jpg'></img>
+                        <img className="portrait" src='../static/about-face1.jpg'></img>
                         <p className="board-name">Coleen Porter</p>
                         <p className="board-position">Vice Chairman</p>
                     </div>
                     <div>
-                        <img src='../static/about-face3.jpg'></img>
+                        <img className="portrait" src='../static/about-face3.jpg'></img>
                         <p className="board-name">Jake Ferguson</p>
                         <p className="board-position">Chief Physician's Officer</p>
                     </div>
-                </div>
+                </SideBar>
                 <div className="main">
                     <h1>Who We Are</h1>
                     <p>React Health Solutions is a strong health care advocate. It is not an insurance company that makes money by denying healthcare claims. Sadly, that is all too common. React Health Solutions is a health benefits management company managing a unique design of health benefit programs for public and private sector employers. Although it is not an insurance company, React Health Solutions offers plan sponsors and their employees a customized and complete administrative program for healthcare coupled with insurance protection from a rated carrier. React Health Solutions provides plan sponsors with what they need—a turnkey program of service providers offering state-of-the-art TPA, disease management and network services.</p>
@@ -37,24 +38,6 @@ export default function About() {
                 </div>
             </div>
             <style jsx>{`
-            .content {
-                display: flex;
-                flex-flow: row wrap;   
-                font-family: Ubuntu;
-            }
-            .content > * {
-                flex: 1 100%;
-            }
-            .main {
-                background-color: white;
-                border-radius: 6px;
-                -webkit-box-shadow: 3px 3px 10px #999;
-                -moz-box-shadow: 3px 3px 10px #999;
-                -o-box-shadow: 3px 3px 10px #999;
-                box-shadow: 3px 3px 10px #999;
-                margin: 1em;
-                padding: 2em;
-            }
             .board-header {
                 margin-bottom: 2em;
             }
@@ -67,7 +50,7 @@ export default function About() {
                 text-align: center;
                 margin: .2em 0;
             }
-            .board img {
+            .portrait {
                 border-radius: 50%;
                 -webkit-box-shadow: 2px 3px 10px 2px #999;
                 -moz-box-shadow: 2px 3px 10px 2px #999;
@@ -91,23 +74,22 @@ export default function About() {
             .board-position {
                 margin-bottom: 2em;
             }
+            .main {
+                background-color: white;
+                border-radius: 6px;
+                -webkit-box-shadow: 3px 3px 10px #999;
+                -moz-box-shadow: 3px 3px 10px #999;
+                -o-box-shadow: 3px 3px 10px #999;
+                box-shadow: 3px 3px 10px #999;
+                margin: 1em;
+                padding: 2em;
+            }
             .main h1 {
                 color: #05A5D1;
             }
             .main p {
                 font-size: .9em;
                 font-family: 'Open Sans'
-            }
-
-            @media all and (min-width: 680px) {
-                .content .board { 
-                    flex: 1 0px; 
-                    order: 1; 
-                }
-                .content .main {
-                    order: 2; 
-                    flex: 2 0px;
-                }
             }
             `}</style>        
         </Layout>

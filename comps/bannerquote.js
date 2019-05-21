@@ -15,6 +15,7 @@ export default function BannerQuote (props) {
                     font-family: 'Open Sans';
                     font-size: 2em;
                     font-weight: bold;
+                    margin-top: 0;
                     padding: 10% 10%;
                 }
                 @media all and (min-width: 680px) {

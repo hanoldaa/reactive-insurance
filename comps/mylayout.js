@@ -18,12 +18,19 @@ const Layout =  props => {
                     margin: 0;
                     background-color: #EEE;
                 }
-                
-                .header-container {
-                    background-color: white;
+                .content {
+                    display: flex;
+                    flex-flow: row wrap;   
                 }
-                .banner-quote p {
-                    margin-top: 0;
+                .content > * {
+                    flex: 1 100%;
+                }
+
+                @media all and (min-width: 680px) {
+                    .content .main {
+                        order: 2; 
+                        flex: 2 0px;
+                    }
                 }
             `}</style>
         </div>
