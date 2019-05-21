@@ -5,43 +5,66 @@ const linkStyle = {
 }
 const Header = () => {
     return(
-        <header className="header-container">
-            <div className="header-button" id="login">
-                <a className="login">Log In</a>
-            </div>
-            <div className="header-button" id="register">
-                <a className="register">Register</a>
-            </div>
-            <div className="logo">
-                <img src="../static/logo2.png"></img>
-            </div>
-            <div className="header-button">
-                <LinkActive href="/" passHref>
-                    {active => <a className={active ? 'active' : ''}>Home</a>}
-                </LinkActive>
-            </div>
-            <div className="header-button">
-                <LinkActive href="/about" passHref>
-                    {active => <a className={active ? 'active' : ''}>About Us</a>}
-                </LinkActive>
-            </div>
-            <div className="header-button">
-                <LinkActive href="/services" passHref>
-                    {active => <a className={active ? 'active' : ''}>Services</a>}
-                </LinkActive>
-            </div>
-            <div className="header-button">
-                <LinkActive href="/resources" passHref>
-                    {active => <a className={active ? 'active' : ''}>Health Resources</a>}
-                </LinkActive>
-            </div>
+        <div>
+            <img className="phone-icon" src="../static/phone-icon.png" />
+            <span className="phone-number">(555) 555-5555</span>
+            <header className="header-container">
+                <div className="header-button" id="login">
+                    <a className="login">Log In</a>
+                </div>
+                <div className="header-button" id="register">
+                    <a className="register">Register</a>
+                </div>
+                <div className="logo">
+                    <img src="../static/logo2.png"></img>
+                </div>
+                <div className="header-button">
+                    <LinkActive href="/" passHref>
+                        {active => <a className={active ? 'active' : ''}>Home</a>}
+                    </LinkActive>
+                </div>
+                <div className="header-button">
+                    <LinkActive href="/about" passHref>
+                        {active => <a className={active ? 'active' : ''}>About Us</a>}
+                    </LinkActive>
+                </div>
+                <div className="header-button">
+                    <LinkActive href="/services" passHref>
+                        {active => <a className={active ? 'active' : ''}>Services</a>}
+                    </LinkActive>
+                </div>
+                <div className="header-button">
+                    <LinkActive href="/resources" passHref>
+                        {active => <a className={active ? 'active' : ''}>Health Resources</a>}
+                    </LinkActive>
+                </div>
+            </header>
             <style jsx>{`
+                .phone-icon {
+                    position: absolute;
+                    left: 1em;
+                    top: .5em;
+                    height: 2em;
+                    width: 2em;
+                    padding: 12px 0;
+                }
+                .phone-number {
+                    position: absolute;
+                    left: 48px;
+                    top: .5em;
+                    height: 56px;
+                    text-align: left;
+                    line-height: 56px;
+                    font-family: 'Open Sans';
+                    font-size: .8em;
+                }
                 .header-container {
                     display: flex;
                     flex-flow: row  wrap;
                     font-family: Ubuntu;
                     justify-content: center;
                     padding: 1em 0 1em 1em;
+                    min-height: 105px;
                 }
                 .header-container .logo {
                     margin: 0 1em 0 1em;
@@ -108,7 +131,24 @@ const Header = () => {
                     border-bottom-color: #000;
                 }
 
+                @media screen and (min-width : 375px ) { 
+                    .phone-number {
+                        font-size: 1em;
+                    }
+                }
+
                 @media screen and (min-width : 720px) {
+                    .phone-icon {
+                        right: 1em;
+                        left: initial;
+                        padding: 0;
+                    }
+                    .phone-number {
+                        right: 3em;
+                        text-align: right;
+                        line-height: 2em;
+                        height: 2em;
+                    }
                     .header-container {
                         flex-flow: row nowrap;
                         margin-bottom: 0;
@@ -134,7 +174,7 @@ const Header = () => {
                     }                    
                 }
             `}</style>
-        </header>
+        </div>
     )
 }
 
