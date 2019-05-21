@@ -1,10 +1,9 @@
 import Layout from '../comps/mylayout'
+import BannerQuote from '../comps/bannerquote'
 
 const Index = (props) => (
     <Layout>
-        <div className="banner-quote">
-            <p>React Health Solutions aggressively advocates for members' health needs, provides knowledge, and skillfully promotes early care.</p>
-        </div>
+        <BannerQuote src='../static/home-stock1.jpg' quote="React Health Solutions aggressively advocates for members' health needs, provides knowledge, and skillfully promotes early care." />
         <div className="content">
             <div className="main">
                 <p>
@@ -25,20 +24,6 @@ const Index = (props) => (
             </div>
         </div>
         <style jsx>{`
-            .banner-quote {
-                background: 
-                    linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
-                    url('../static/home-stock1.jpg');
-                background-size: cover;
-                background-position: center center;
-            }
-            .banner-quote p {
-                color: white;
-                font-family: Ubuntu;
-                font-size: 2em;
-                font-weight: bold;
-                padding: 10% 10%;
-            }
             .content {
                 display: flex;
                 flex-flow: row wrap;   
@@ -84,9 +69,6 @@ const Index = (props) => (
                 .content .main {
                     order: 2; 
                     flex: 2 0px;
-                }
-                .banner-quote {
-                    background-attachment: fixed;
                 }
             }
         `}</style>

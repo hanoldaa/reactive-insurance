@@ -1,11 +1,10 @@
 import Layout from '../comps/mylayout'
+import BannerQuote from '../comps/bannerquote';
 
 export default function About() {
     return (
         <Layout>
-            <div className="banner-quote">
-                <p>React Health Solutions has assembled a team of the world's top health professionals who are dedicated to your well being.</p>
-            </div>
+            <BannerQuote src={'../static/about-stock1.jpg'} quote={`React Health Solutions has assembled a team of the world's top health professionals who are dedicated to your well being.`} />
             <div className="content">
                 <div className="board">
                     <div className="board-header">
@@ -99,20 +98,6 @@ export default function About() {
                 font-size: .9em;
                 font-family: 'Open Sans'
             }
-            .banner-quote {
-                background: 
-                    linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
-                    url('../static/about-stock1.jpg');
-                background-size: cover;
-                background-position: center center;
-            }
-            .banner-quote p {
-                color: white;
-                font-family: Ubuntu;
-                font-size: 2em;
-                font-weight: bold;
-                padding: 10% 10%;
-            }
 
             @media all and (min-width: 680px) {
                 .content .board { 
@@ -122,9 +107,6 @@ export default function About() {
                 .content .main {
                     order: 2; 
                     flex: 2 0px;
-                }
-                .banner-quote {
-                    background-attachment: fixed;
                 }
             }
             `}</style>        
