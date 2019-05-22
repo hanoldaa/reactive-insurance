@@ -15,16 +15,16 @@ const Index = (props) => (
                         <button>Find a Doctor  ></button>
                     </div>
                     <div className="card">
-                        <img src="../static/doctor-icon.png"></img>
-                        <button>Find a Doctor  ></button>
+                        <img src="../static/pills-icon.png"></img>
+                        <button>Drug Lookup  ></button>
                     </div>
                     <div className="card">
-                        <img src="../static/doctor-icon.png"></img>
-                        <button>Find a Doctor  ></button>
+                        <img src="../static/plan-icon.png"></img>
+                        <button>Find a Plan  ></button>
                     </div>
                     <div className="card">
-                        <img src="../static/doctor-icon.png"></img>
-                        <button>Find a Doctor  ></button>
+                        <img src="../static/chat-icon.png"></img>
+                        <button>Live Chat  ></button>
                     </div>
                 </div>
             </div>
