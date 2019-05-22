@@ -78,7 +78,7 @@ const Index = (props) => (
                 width: 128px;
             }
             .card button {
-                background-color: #D80;
+                background-color: #05a5d1;
                 border: none;
                 border-radius: 1em;
                 color: white; 
