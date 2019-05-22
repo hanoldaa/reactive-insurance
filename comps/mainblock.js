@@ -6,10 +6,10 @@ export default function MainBlock (props) {
                 .main {
                     background-color: white;
                     border-radius: 6px;
-                    -webkit-box-shadow: 3px 3px 10px #999;
-                    -moz-box-shadow: 3px 3px 10px #999;
-                    -o-box-shadow: 3px 3px 10px #999;
-                    box-shadow: 3px 3px 10px #999;
+                    -webkit-box-shadow: 2px 3px 10px #999, 0px 0px 6px #CCC;
+                    -moz-box-shadow: 2px 3px 10px #999, 0px 0px 6px #CCC;
+                    box-shadow: 2px 3px 10px #999, 0px 0px 6px #CCC;
+
                     font-family: 'Open Sans';
                     margin: 1em;
                     padding: 2em;

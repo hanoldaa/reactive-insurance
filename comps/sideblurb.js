@@ -6,9 +6,9 @@ export default function SideBlurb (props) {
             .blurb {
                 border-radius: 5px;
                 background-color: white;
-                -webkit-box-shadow: 2px 3px 10px #999;
-                -moz-box-shadow: 2px 3px 10px #999;
-                box-shadow: 2px 3px 10px #999;
+                -webkit-box-shadow: 2px 3px 10px #999, 0px 0px 6px #999;
+                -moz-box-shadow: 2px 3px 10px #999, 0px 0px 6px #999;
+                box-shadow: 2px 3px 10px #999, 0px 0px 6px #999;
                 color: black;
                 font-family: 'Open Sans';
                 font-size: .8em;
@@ -20,9 +20,9 @@ export default function SideBlurb (props) {
             .blurb.emphasized {
                 color: white;
                 background-color: #05a5d1;
-                -webkit-box-shadow: 2px 3px 10px #036a86;
-                -moz-box-shadow: 2px 3px 10px #036a86;
-                box-shadow: 2px 3px 10px #036a86;
+                -webkit-box-shadow: 2px 3px 10px #999, 0px 0px 6px #999;
+                -moz-box-shadow: 2px 3px 10px #999, 0px 0px 6px #999;
+                box-shadow: 2px 3px 10px #999, 0px 0px 6px #999;
             }
             .blurb h1 {
                 font-size: 1em;
