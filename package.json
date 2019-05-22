@@ -20,7 +20,8 @@
     "now": "^15.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-markdown": "^4.0.8"
+    "react-markdown": "^4.0.8",
+    "rss-parser": "^3.7.0"
   },
   "devDependencies": {
     "isomorphic-unfetch": "^3.0.0"

@@ -20,6 +20,7 @@ export default function SideBar (props) {
                 .sidebar { 
                     flex: 1 0px; 
                     order: 1; 
+                    max-width: 300px
                 }
             }
             `}</style>

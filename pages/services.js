@@ -15,7 +15,14 @@ export default function About() {
                 </MainBlock>
                 <SideBar header="MY HEALTH MANAGER™">
                     <SideBlurb emphasized={true}>
-                        <p>With My Health Manager™, you get instant access to your benefits, in-network doctors, important health documents.</p>
+                        <p>With My Health Manager™, you get instant access to all of our features.</p>
+                        <ul>
+                            <li>Compare and select plans.</li>
+                            <li>Manage your dependents and beneficiaries.</li>
+                            <li>View important documents.</li>
+                        </ul>
+                        <img src="../static/responsive-icon.png"></img>
+                        <p>Log in to access My Health Manager™</p>
                     </SideBlurb>
                 </SideBar>
             </div>

@@ -16,10 +16,17 @@ export default function MainBlock (props) {
                 }
                 .main h1 {
                     color: #05A5D1;
+                    margin-bottom: 0;
+                }
+                .main h2 {
+                    color: #036a86;
+                    size: 1em;
+                    margin-bottom: 0;
                 }
                 .main p {
                     font-size: .9em;
-                    font-family: 'Open Sans'
+                    font-family: 'Open Sans';
+                    margin-top: .2em;
                 }
             `}</style>
         </div>

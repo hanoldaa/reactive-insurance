@@ -28,12 +28,28 @@ export default function SideBlurb (props) {
                 font-size: 1em;
                 text-align: center;
             }
+            .blurb h2 {
+                margin-bottom: -.5em;
+                margin-top: 1em;
+            }
+            .blurb h2 a {
+                border-bottom: 1px solid #999;
+                font-size: .7em;
+                font-weight: bold;
+                padding-bottom: .2em;
+                text-align: justify;
+            }
             .blurb a {
                 display: block;
                 text-align: center;
                 font-weight: bold;
                 font-size: 1.1em;
                 text-decoration: none;
+            }
+            .blurb img {
+                display: inline-block;
+                padding-left: 10%;
+                width: 80%;
             }
             `}</style>
         </div>
