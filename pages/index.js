@@ -13,7 +13,12 @@ const Index = (props) => (
                 </p>
             </div>
             <SideBar header="ANNOUNCEMENTS">
-                <SideBlurb>
+                <SideBlurb emphased={false}>
+                    <h1>IMPORTANT MEASLES INFORMATION</h1>
+                    <p>The CDC has released a new document containing important information about the measles virus.</p>
+                    <a href="https://www.cdc.gov/measles/downloads/IntroToMeaslesSlideSet.pdf" target="_blank">Read It Here</a>
+                </SideBlurb>
+                <SideBlurb emphasized={true}>
                     <p>React Health Solutions is passionate about keeping members healthy.</p>
                     <ul>
                         <li>We believe in the wisdom of early care.</li>
