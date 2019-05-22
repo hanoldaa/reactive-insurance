@@ -6,6 +6,8 @@ export default function SideBlurb (props) {
             .blurb {
                 border-radius: 5px;
                 background-color: white;
+                -webkit-box-shadow: 2px 3px 10px #999;
+                -moz-box-shadow: 2px 3px 10px #999;
                 box-shadow: 2px 3px 10px #999;
                 color: black;
                 font-family: 'Open Sans';
@@ -18,6 +20,8 @@ export default function SideBlurb (props) {
             .blurb.emphasized {
                 color: white;
                 background-color: #05a5d1;
+                -webkit-box-shadow: 2px 3px 10px #036a86;
+                -moz-box-shadow: 2px 3px 10px #036a86;
                 box-shadow: 2px 3px 10px #036a86;
             }
             .blurb h1 {
